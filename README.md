@@ -1,24 +1,19 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## forms テーブル
 
-Things you may want to cover:
+| Column              | Type      | Options                   |
+| ------------------- | --------- | ------------------------- |
+| last_name_kana      | string    | null: false               |
+| first_name_kana     | string    | null: false               |
+| phone_number        | string    | null: false               |
+| number_of_people    | string    | null: false               |
+| seat                | integer   | null: false               |
+| datetime            | datetime  | null: false               |
 
-* Ruby version
+## tops テーブル
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Column              | Type      | Options     |
+| ------------------- | --------- | ----------- |
+| evaluation_id       | integer   | null: false |
+| comment             | text      | null: false |

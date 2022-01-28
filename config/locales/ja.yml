@@ -1,0 +1,6 @@
+ja:
+  enums:
+     form:
+       seat:
+         table: テーブル席
+         counter: カウンター席

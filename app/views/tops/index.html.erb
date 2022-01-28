@@ -1,0 +1,49 @@
+<%= render "shared/header" %>
+
+<div class="main">
+  <div class="image-top">
+    <div class="images">
+      <%= image_tag "IMG_0161.JPG", class:"pict" %>
+      <span class="point">◀️</span>
+      <%= image_tag "IMG_0168.JPG", class:"pict" %>
+      <span class="point">◀️</span>
+      <%= image_tag "IMG_0163.JPG", class:"pict" %>
+      <span class="point">◀️</span>
+      <%= image_tag "IMG_0164.JPG", class:"pict" %>
+      <span class="point">◀️</span>
+      <%= image_tag "IMG_0165.JPG", class:"pict" %>
+    </div>
+  </div>
+
+  <div class= "access">
+    <div class="main-texts">
+    アクセス
+    </div>
+    <div class="g-map">
+    <%= render "shared/map" %>
+    </div>
+    <div class="unit-inner">
+    <table class="basic-table">
+      <tbody>
+        <tr>
+          <th class="sub-texts">住所</th>
+          <td>
+            <p class="texts">〒310-0011</p>
+            <p class="texts">茨城県水戸市三の丸1-4-3 内藤ビル1F</p>
+            <p class="texts">090-1234-5678</p>
+          </td>
+        </tr>
+        <tr>
+          <th class="sub-texts">交通手段</th>
+          <td>
+            <p class="texts">JR常磐線水戸駅北口 徒歩5分</p>
+          </td>
+        </tr>
+      </table>
+      </tbody>
+    </div>
+  </div>
+  
+</div>
+
+<%= render "shared/footer" %>

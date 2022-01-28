@@ -1,0 +1,80 @@
+.main {
+  display: flex;
+  display: block;
+  padding: 20px 20px;
+
+}
+
+.main-texts {
+  color: dimgrey;
+  font-size: 36px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.sub-texts {
+  color: dimgrey;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.texts {
+  color: dimgrey;
+  font-size: 14px;
+}
+
+.image-top {
+  width: 100%;
+  height: 80%;
+  margin-top: 20px;
+  padding: 100px 20vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.images {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.pict {
+  margin: 0 20px;
+  width: 500px;
+}
+
+.point {
+  margin: auto 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.access {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.g-map {
+  margin: 20px;
+}
+
+.unit-inner {
+  padding: 14px;
+}
+
+.basic-table {
+  border-collapse: collapse;
+}
+
+th,td {
+  border: 1px solid lightgray;
+  padding: 10px 20px;
+}
+
+td {
+  width:  300px;
+  height: 80px;
+}

@@ -11,7 +11,7 @@
 | seat                | integer   | null: false               |
 | datetime            | datetime  | null: false               |
 
-## tops テーブル
+## comments テーブル
 
 | Column              | Type      | Options     |
 | ------------------- | --------- | ----------- |

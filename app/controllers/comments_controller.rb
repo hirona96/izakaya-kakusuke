@@ -2,12 +2,13 @@ class CommentsController < ApplicationController
 
   def index
     @comments = Comment.all
+    @comment = Comment.new
   end
 
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      render :index
+      redirect_to action: :index
     else
       render :index
     end
@@ -16,7 +17,7 @@ class CommentsController < ApplicationController
 
   private
 
-  def(comment_params)
+  def comment_params
     params.require(:comment).permit(:evaluation_id, :comment, :image) 
   end
 

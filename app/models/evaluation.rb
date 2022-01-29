@@ -7,4 +7,8 @@ class Evaluation < ActiveHash::Base
     { id: 5, name: '★★★★☆'},
     { id: 6, name: '★★★★★'}
   ]
+
+  include ActiveHash::Associations
+  has_many :comments
+
 end

@@ -12,8 +12,8 @@ class FormsController < ApplicationController
     end
   end
 
-  private 
-  
+  private
+
   def form_params
     params.require(:form).permit(:last_name_kana, :first_name_kana, :phone_number, :number_of_people, :datetime, :seat)
   end

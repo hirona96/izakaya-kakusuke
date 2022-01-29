@@ -1,10 +1,16 @@
 .top-page-header {
   width: 100vw;
   height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: right;
-  align-items: flex-end;
-  background-image: url('IMG_0105.JPG');
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url("IMG_0105.JPG");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,7 +20,7 @@
   height: 110px;
   margin: 0 15px 15px 0;
   border-radius: 10px;
-  background:rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   color: white;
   font-size: 24px;
   text-align: center;
@@ -28,17 +34,22 @@
 }
 
 .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-height: 60vh;
   padding: 0px;
-  color: rgb(51, 51, 51);
-  border-left: 1px solid rgb(238, 238, 238);
-  border-right: 1px solid rgb(238, 238, 238);
-  background-color: rgb(255, 255, 255);
+  color: #333333;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  background-color: white;
 }
 
-.pull-down-menu{
+.pull-down-menu {
   padding: 15px 55px 15px 15px;
   border: 1px solid lightgray;
   font-size: 14px;
@@ -51,3 +62,4 @@
 .hidden {
   display: none;
 }
+/*# sourceMappingURL=header.css.map */

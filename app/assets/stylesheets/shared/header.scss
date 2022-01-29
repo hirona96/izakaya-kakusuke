@@ -1,0 +1,53 @@
+.top-page-header {
+  width: 100vw;
+  height: 45vh;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  background-image: url('IMG_0105.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-text {
+  width: 110px;
+  height: 110px;
+  margin: 0 15px 15px 0;
+  border-radius: 10px;
+  background:rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 37px;
+}
+
+.menu-wrapper {
+  position: absolute;
+  right: 0px;
+  top: 355px;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  max-height: 60vh;
+  padding: 0px;
+  color: rgb(51, 51, 51);
+  border-left: 1px solid rgb(238, 238, 238);
+  border-right: 1px solid rgb(238, 238, 238);
+  background-color: rgb(255, 255, 255);
+}
+
+.pull-down-menu{
+  padding: 15px 55px 15px 15px;
+  border: 1px solid lightgray;
+  font-size: 14px;
+  color: gray;
+  font-style: oblique;
+  text-decoration: none;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}

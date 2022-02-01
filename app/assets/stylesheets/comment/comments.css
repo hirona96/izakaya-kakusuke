@@ -76,7 +76,12 @@
 }
 
 .c-wrapper {
- 
+  width: 60%;
+}
+
+.coment-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .comment-image {

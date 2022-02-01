@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 
   def index
-    @comments = Comment.all.order('created_at ASC')
+    @comments = Comment.all.order('created_at DESC')
     @comment = Comment.new
   end
 

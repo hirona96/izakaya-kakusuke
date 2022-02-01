@@ -2,10 +2,28 @@
 
 <div class="main">
   <div class="comment-top">
+    <% if comment.present?%>
     <div class="texts">口コミ投稿ができます</div>
-    <%# @comments.each do |comment| %>
-
-    <%# end %>
+    <% end %>
+      <div class="comment-list">
+        <% @comments.each do |comment| %>
+        <%= link_to "#" do %>
+          <div class="comment-head">
+            <%= image_tag "", class:"comment-icon"%>
+            <div class="evaluation">
+            <%= comment.evaluation.name %>
+            </div>
+          </div>
+          <div class="comment-body">
+            <div class="text">
+            <%= comment.comment %>
+            </div>
+            <%= image_tag comment.image, class: "comment-image" %>
+          </div>
+        <% end %>
+        <% end %>
+      </div>
+    </div>
   </div>
 
   <%= form_with model: @comment, url: comments_path, class: 'comment', local: true do |f| %>

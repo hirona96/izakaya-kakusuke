@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to action: :index
     else
-      render :index
+      render :new
     end
   end
 

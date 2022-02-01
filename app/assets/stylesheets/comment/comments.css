@@ -48,9 +48,19 @@
   padding: 5px;
 }
 
-
-
-
+.new-comment {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.new-comment-btn {
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+  padding: 40px 70px;
+  border-radius: 30px;
+  font-size: 20px;
+}
 
 .comment {
   padding: 20px 10px;

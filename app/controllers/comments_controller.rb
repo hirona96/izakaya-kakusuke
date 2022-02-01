@@ -2,6 +2,9 @@ class CommentsController < ApplicationController
 
   def index
     @comments = Comment.all.order('created_at DESC')
+  end
+
+  def new
     @comment = Comment.new
   end
 
@@ -10,7 +13,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to action: :index
     else
-      render :index
+      render :new
     end
   end
 

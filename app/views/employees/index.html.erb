@@ -1,0 +1,48 @@
+<%= render "shared/header" %>
+
+<div class="employee-main">
+  
+  <% @employees.each_slice(2) do |employee1,employee2| %>
+
+  <% if employee1 != nil %>
+    <div class="employee-list">
+      <div class="employee-wrapper">
+        <div class="employee-head">
+          <div class="employee-name">
+            <%= employee1.name %>
+          </div>
+        </div>
+        
+        <div class="employee-body">
+          <%= image_tag "IMG_0123.JPG", class:"employee-icon"%>
+          <div class="link-texts">
+          <%= employee1.one_thing %>
+          </div>
+        </div>
+        </div>
+    </div>
+  <% end %>
+
+  <% if employee2 != nil %>
+     <div class="employee-list">
+      <div class="employee-wrapper">
+        <div class="employee-head">
+          <div class="employee-name">
+            <%= employee2.name %>
+          </div>
+        </div>
+        
+        <div class="employee-body">
+          <%= image_tag "IMG_0123.JPG", class:"employee-icon"%>
+          <div class="link-texts">
+          <%= employee2.one_thing %>
+          </div>
+        </div>
+        </div>
+    </div>
+  <% end %>
+    
+  <% end %>
+</div>
+
+<%= render "shared/footer" %>

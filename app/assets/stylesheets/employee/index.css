@@ -1,0 +1,44 @@
+.employee-main {
+  display: flex;
+  padding: 20px 20px;
+}
+
+.employee-list {
+  margin: 185px 10px;
+}
+
+.employee-wrapper {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: tomato solid 2px;
+}
+
+.employee-head {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.employee-name {
+  font-size: 28px;
+  font-weight: bold;
+} 
+
+.employee-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  height: 30vh;
+  width: 20vw;
+}
+
+.employee-icon {
+  width: 60%;
+  height: 60%;
+  border-radius: 75px;
+  border: tomato solid 2px;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,49 @@
+<%= render "shared/header" %>
+
+<%= form_with model: @employee, url: new_employee_session_path, class: 'main', local: true do |f| %>
+
+<div class="registration-main">
+  <div class="registration-side">
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+        ログイン
+      </h1>
+    </div>
+
+    <%= render 'shared/error_messages', model: f.object %>
+
+  <div class='registration-wrap'>
+    
+    <div class="registration-content">
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">メールアドレス</label>
+        <span class="indispensable">*必須</span>
+      </div>
+      <div class='input-wrap'>
+          <%= f.text_field :email, class:"input-default", id:"email", placeholder:"abc@icloud.com" %>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">パスワード</label>
+        <span class="indispensable">*必須</span>
+      </div>
+      <div class='input-date-wrap'>
+          <%= f.password_field :password, class:"input-default", id:"password", placeholder:"半角英数字",maxlength:"10"%>
+      </div>
+    </div>
+     <div class="form-group">
+      <div class='form-btn'>
+        <%= f.submit "ログイン" ,class:"registration-red-btn" %>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+   
+</div>
+<% end %>
+  
+<%= render "shared/footer" %>

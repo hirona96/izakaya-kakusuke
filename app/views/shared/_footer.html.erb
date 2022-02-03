@@ -20,5 +20,14 @@
         <li><%= link_to 'VISA MasterCard JCB UC', "#", class: "footer-link" %></li>
       </ul>
     </div>
-    
+  </div>
+   <div class="white-btn-wrap">
+      <% if employee_signed_in? %>
+      <%= link_to "ログアウト", destroy_employee_session_path, class:"white-btn", method: :delete %>
+      <% else %>
+      <%= link_to "スタッフ登録", new_employee_registration_path, class:"white-btn" %>
+      <%= link_to "ログイン", new_employee_session_path, class:"white-btn" %>
+      <% end %>
+    </div>
+
 </footer>

@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :tops
   resources :forms, only: [:index, :create]
   resources :comments, only: [:index, :new, :create]
+  resources :employees, only: [:index]
 end

@@ -35,7 +35,8 @@
 
 .slideshow {
   display: flex;
-  animation: loop-slide 30s infinite linear 1s both;
+  z-index: -1;
+  animation: loop-slide 40s infinite linear 1s both;
 }
 
 @keyframes loop-slide {

@@ -34,9 +34,9 @@ https://docs.google.com/spreadsheets/d/15wa0Jp7V0HaIx9fI_0V6GSjDKkRdXHaLqlW92e5b
 今後は口コミに対するスタッフの返信機能や、退社したスタッフの退会機能を実装予定。
 また、予約のブッキングが起こらないようにするための機能を実装予定。
 ### データベース設計
-[![Image from Gyazo](https://i.gyazo.com/f7aad8a6fb88558d474b2d152b0ee225.png)](https://gyazo.com/f7aad8a6fb88558d474b2d152b0ee225)
+[![Image from Gyazo](https://i.gyazo.com/7b08ee1a402e8264939b14be66b78bd0.png)](https://gyazo.com/7b08ee1a402e8264939b14be66b78bd0)
 ### 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/1ec613825efd3e62c99731aa4584d072.png)](https://gyazo.com/1ec613825efd3e62c99731aa4584d072)
+[![Image from Gyazo](https://i.gyazo.com/9bde033b6b1db963372a56096fc798fc.png)](https://gyazo.com/9bde033b6b1db963372a56096fc798fc)
 ### 開発環境
 * フロントエンド
 * バックエンド 

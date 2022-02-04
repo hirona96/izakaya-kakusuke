@@ -11,6 +11,11 @@
           <div class="employee-name">
             <%= employee1.name %>
           </div>
+           <div class="white-btn-wrap">
+            <% if employee_signed_in? %>
+            <%= link_to "退会", new_retirement_path, class:"retirement-btn" %>
+            <% end %>
+          </div>
         </div>
         
         <div class="employee-body">
@@ -29,6 +34,11 @@
         <div class="employee-head">
           <div class="employee-name">
             <%= employee2.name %>
+          </div>
+           <div class="white-btn-wrap">
+            <% if employee_signed_in? %>
+            <%= link_to "退会", new_retirement_path, class:"retirement-btn" %>
+            <% end %>
           </div>
         </div>
         

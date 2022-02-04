@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   resources :forms, only: [:index, :create]
   resources :comments, only: [:index, :new, :create]
   resources :employees, only: [:index]
-  resources :retirments, only: [:new, :create]
+  resources :retirements, only: [:new, :create]
 end

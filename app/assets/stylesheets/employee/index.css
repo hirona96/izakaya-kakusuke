@@ -16,7 +16,7 @@
 
 .employee-head {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   padding: 5px;
   border-bottom: 1px solid lightgray;
 }
@@ -25,6 +25,15 @@
   font-size: 28px;
   font-weight: bold;
 } 
+
+.retirement-btn {
+  background-color: white;
+  color: gray;
+  border-radius: 40px;
+  padding: 9px;
+  text-decoration: none;
+  border:gray solid 1px;
+}
 
 .employee-body {
   display: flex;

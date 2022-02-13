@@ -7,9 +7,6 @@ https://izakaya-kakusuke.herokuapp.com/
 ### テスト用アカウント
 * Basic認証パスワード：0607
 * Basic認証ID：techcamp
-* スタッフNO.：a12345678
-* 名前：ゆうき
-* 一言：各助店長です☆
 * メールアドレス：aaa@gmail.com
 * パスワード：aaa000
 ### 利用方法
@@ -28,15 +25,27 @@ https://izakaya-kakusuke.herokuapp.com/
 ### 洗い出した要件
 https://docs.google.com/spreadsheets/d/15wa0Jp7V0HaIx9fI_0V6GSjDKkRdXHaLqlW92e5bsBw/edit#gid=982722306
 ### 実装した機能についての画像やGIFおよびその説明
+#### 予約
+フルネーム（カナ）、電話番号、人数、席指定、来店日時を入力して予約する。
+[![Image from Gyazo](https://i.gyazo.com/bcd418b144a7e540eff0038b4d764f00.gif)](https://gyazo.com/bcd418b144a7e540eff0038b4d764f00)
+#### 口コミ投稿
+評価、コメントを入力して口コミを投稿する。一覧を表示する。
+[![Image from Gyazo](https://i.gyazo.com/613e635e57a83e603a0dba6debb430f0.png)](https://gyazo.com/613e635e57a83e603a0dba6debb430f0)
+[![Image from Gyazo](https://i.gyazo.com/5d3a1c1e0b15ec670b475d7b48715c69.jpg)](https://gyazo.com/5d3a1c1e0b15ec670b475d7b48715c69)
+#### 退会
+退会をする前に、Ajaxを利用して確認をする
+[![Image from Gyazo](https://i.gyazo.com/6c0012b048b1a56dfd3adb19ad108abf.jpg)](https://gyazo.com/6c0012b048b1a56dfd3adb19ad108abf)
 
 ### 実装予定の機能
-現在、ユーザー新規登録機能を実装中。
-今後は口コミに対するスタッフの返信機能や、退社したスタッフの退会機能を実装予定。
-また、予約のブッキングが起こらないようにするための機能を実装予定。
+* 予約情報のDB管理をより細かくできるようにすること  
+ダブルブッキングを防ぐために、人数や席指定の項目が上限に達したら、予約フォームに遷移できなくなる仕組みを作りたい。また、不要になった予約情報を1日ごとに削除したいと考えている。
+
+* 管理機能を設けること  
+誰でも口コミを投稿できるため、不適切な投稿は削除できるようにしたい。また、現在トップページに表示されているスタッフ新規登録ボタンなどを管理者以外には見えないようにするなど、見た目にも配慮したサイトにしたい。
 ### データベース設計
-[![Image from Gyazo](https://i.gyazo.com/7b08ee1a402e8264939b14be66b78bd0.png)](https://gyazo.com/7b08ee1a402e8264939b14be66b78bd0)
+[![Image from Gyazo](https://i.gyazo.com/e7748d55495c8da97bb0847ec4f1720d.png)](https://gyazo.com/e7748d55495c8da97bb0847ec4f1720d)
 ### 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/9bde033b6b1db963372a56096fc798fc.png)](https://gyazo.com/9bde033b6b1db963372a56096fc798fc)
+[![Image from Gyazo](https://i.gyazo.com/506a7a40ee9b08aabee9a0a1beb594c5.png)](https://gyazo.com/506a7a40ee9b08aabee9a0a1beb594c5)
 ### 開発環境
 * フロントエンド
 * バックエンド 
@@ -52,4 +61,11 @@ https://docs.google.com/spreadsheets/d/15wa0Jp7V0HaIx9fI_0V6GSjDKkRdXHaLqlW92e5b
 % yarn install  
 
 ### 工夫したポイント
-将来的に使えるように、友人にどんな機能を取り入れたら良いか実際に聞きました。予約機能や口コミ機能はあると嬉しいとのことだったため、優先的に実装しました。
+* 友人へのヒアリング
+将来的に使えるように、どんな機能を取り入れたら良いか実際に聞き、予約機能や口コミ機能を優先的に実装した。  
+
+* enumを用いてのDBへの保存
+予約フォームでform_withのラジオボタンを実装したかったため、それを用いて席指定に関する値を保存できるようにした。  
+
+* 退会機能
+退職したスタッフをスタッフ紹介ページに表示させないように、スタッフであれば誰でも退会ができるように実装した。

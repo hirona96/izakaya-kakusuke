@@ -38,17 +38,20 @@ https://docs.google.com/spreadsheets/d/15wa0Jp7V0HaIx9fI_0V6GSjDKkRdXHaLqlW92e5b
 ---
 #### 予約
 ---
-フルネーム（カナ）、電話番号、人数、席指定、来店日時を入力して予約する。
+フルネーム（カナ）、電話番号、人数、席指定、来店日時を入力して予約する。  
+
 [![Image from Gyazo](https://i.gyazo.com/bcd418b144a7e540eff0038b4d764f00.gif)](https://gyazo.com/bcd418b144a7e540eff0038b4d764f00)
 #### 口コミ投稿
 ---
-評価、コメントを入力して口コミを投稿する。一覧を表示する。
+評価、コメントを入力して口コミを投稿する。一覧を表示する。  
+
 [![Image from Gyazo](https://i.gyazo.com/613e635e57a83e603a0dba6debb430f0.png)](https://gyazo.com/613e635e57a83e603a0dba6debb430f0)  
 
 [![Image from Gyazo](https://i.gyazo.com/5d3a1c1e0b15ec670b475d7b48715c69.jpg)](https://gyazo.com/5d3a1c1e0b15ec670b475d7b48715c69)
 #### 退会
 ---
-退会をする前に、Ajaxを利用して確認をする
+退会をする前に、Ajaxを利用して確認をする。  
+
 [![Image from Gyazo](https://i.gyazo.com/6c0012b048b1a56dfd3adb19ad108abf.jpg)](https://gyazo.com/6c0012b048b1a56dfd3adb19ad108abf)
 
 ### 実装予定の機能
